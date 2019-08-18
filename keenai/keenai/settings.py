@@ -11,6 +11,13 @@
 
 BOT_NAME = 'keenai'
 
+USER_NAME = "redacted"
+USER_PASSWORD ="redacted"
+
+
+DATA_PATH = "~/data"
+
+
 SPIDER_MODULES = ['keenai.spiders']
 NEWSPIDER_MODULE = 'keenai.spiders'
 
@@ -64,9 +71,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'keenai.pipelines.KeenaiPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'keenai.pipelines.KeenaiPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
